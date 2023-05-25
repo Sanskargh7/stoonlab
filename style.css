@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --white_color : #ffffff;
+    --light_sky: #c2e3ff;
+    --blue_color: #008CFF;
+    --dark_blue: #003F73;
+}
+
+.mainContainer{
+    margin-top: 50px;
+}
+
+.itemContainer{
+    width: 1300px;
+    height: 730px;
+    background-color: var(--white_color);
+    border: none;
+    box-shadow: 0px 0px 10px 0px black;
+    margin: auto;
+    padding: 50px 100px;
+}
+
+.inputBoxContainer h2{
+    color:var(--dark_blue);
+}
+
+::placeholder{
+    color:var(--dark_blue);
+}
+
+.inputBoxContainer input{
+    background-color:var(--light_sky);
+    margin-right: 50px;
+    padding: 12px 50px;
+    font-weight: bold;
+    border: none;
+    border-radius:5px;
+    font-size: 15px;
+}
+
+/* input box container/ ends */
+
+
+
+/* graphs container  */
+
+#h2{
+    color: var(--dark_blue);
+}
+.graphContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+/* graphs starts */
+.chart {
+    width: 100px;
+    /* max-width: 300px; */
+    /* margin: 0 auto; */
+    /* padding: 20px; */
+    box-sizing: border-box;
+  }
+
+  .bar {
+    width: 0;
+    height: 260px;
+    background-color: var(--light_sky);
+    margin-bottom: 10px;
+  }
+
+  /* pei chart */
+  .pieChart {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    background-color: #9de1fc;
+    overflow: hidden;
+  }
+
+  .slice {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip: rect(0, 100px, 200px, 0);
+    transform-origin: center;
+  }
+
+  .slice-1 {
+    background-color: #2196F3;
+    transform: rotate(10deg);
+  }
+
+  .slice-2 {
+    background-color: #2196F3;
+    transform: rotate(0deg);
+  }
+  
+  /* gradient graph */
+  .grandientChart {
+    width: 90px;
+    height: 320px;
+    display: flex;
+  }
+
+  .g-bar {
+    flex: 1;
+    position: relative;
+    background: linear-gradient(to bottom, var(--light_sky), var(--blue_color));
+    margin: 0 5px;
+  }
+
+  .g-bar span {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-60%);
+    font-size: 14px;
+    color: white;
+    padding:5px;
+  }
